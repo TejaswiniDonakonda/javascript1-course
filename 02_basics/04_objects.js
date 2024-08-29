@@ -1,6 +1,12 @@
 //const JsUser=new Object()
 //const JsUser={}
 
+const tinderUser={
+    email:"142018@gmail.com",
+    name:"Maadhavaa",
+    isLoggedIn:false
+}
+
 const UserInfo={
     email:"abc@gmail.com",
     username:{
@@ -30,9 +36,44 @@ const obj2={3:"c",4:"d"}
 //other way to  combine objects is using spresd operator
 
 const obj3={...obj1,...obj2}
+//console.log(obj3)
+
+const users=[
+    {
+        name:"Keshava",
+        id:1
+    },
+    {
+        name:"Vaasudeva",
+        id:2
+    }
+]
+// console.log(users[1].name)
+
+// console.log(tinderUser);
+// console.log(Object.values(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.entries(tinderUser));
+
+const course={
+    coursename:"JavaScript",
+    price:300,
+    instructor:"Krishna"
+}
+//object de-structring [we cannot write repeatedly to access values of object by writing course.coursename or course.price etc]
+//in such cases this object-destructring is helpful
+
+const {coursename}=course
+console.log(coursename);
 
 
-console.log(obj3)
+
+
+
+
+
+
+
 
 
 
