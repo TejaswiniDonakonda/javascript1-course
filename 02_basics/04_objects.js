@@ -63,8 +63,11 @@ const course={
 //object de-structring [we cannot write repeatedly to access values of object by writing course.coursename or course.price etc]
 //in such cases this object-destructring is helpful
 
-const {coursename}=course
-console.log(coursename);
+//const {coursename}=course
+//console.log(coursename); //will print JavaScript
+//we can modify key name when you are using object destructuring
+const {coursename:cname}=course
+console.log(cname);
 
 
 
